@@ -22,10 +22,10 @@ def test_registration_demo_qa_midl():
         registration_page.fill_phone('9770001010')
         registration_page.fill_date('21', 'February', '1992')
         registration_page.fill_subjects('Biology')
+        registration_page.fill_state()
         registration_page.fill_hobbies()
         registration_page.fill_upload_file('rus.jpg')
         registration_page.fill_address('Ulyanovsk')
-        registration_page.fill_state()
         registration_page.fill_city()
 
     with allure.step('Отправляем форму'):
